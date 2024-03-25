@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 781533787}
   - component: {fileID: 781533790}
   - component: {fileID: 781533791}
+  - component: {fileID: 781533792}
   m_Layer: 0
   m_Name: Virtual Guy
   m_TagString: Untagged
@@ -394,7 +395,21 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &781533792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781533786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4913feebbfab3c48914cd15ae19c495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  forceJump: 4
 --- !u!1 &983220110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,7 +1144,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 983220110}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b730c71fe0b3bdb4bb43791d41934e6b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
